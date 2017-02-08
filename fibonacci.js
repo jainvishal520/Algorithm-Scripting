@@ -1,6 +1,6 @@
 //Given a number N return the index value of the Fibonacci sequence, where the sequence is:
 
-//*************** For loop solution ***********//
+//*************** For loop solution(O(n) time complexity) ***********//
 function fibonacci(num){
 var a=1,b=0,temp;
 while(num>=0){
@@ -13,7 +13,7 @@ return b;
 }
 
 
-//*************** While loop solution ***********//
+//*************** While loop solution(O(n) time complexity) ***********//
 function fibonacci(num){
   var a=1,b=0,temp;
   for(var i = 0;i<=num;i++){
@@ -25,7 +25,7 @@ function fibonacci(num){
 }
 
 
-//*************** Recursive solution ***********//
+//*************** Recursive solution(O(2^n) time complexity) ***********//
 function fibonacci(num){
 return (num<=1)?1:fibonacci(num-1)+fibonacci(num-2);
 }
