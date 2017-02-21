@@ -17,36 +17,25 @@
 
 var Person = function(firstAndLast) {
     var nameArr = firstAndLast.split(' ');
-  
-    
     this.getFirstName = function(){
       return nameArr[0];
-    };
-    
+    };   
     this.getLastName = function(){
       return nameArr[1];
     };
-    
     this.getFullName = function(){
       return nameArr.join(' ');
-    };
-    
+    };    
     this.setFirstName = function(fname){
       nameArr[0] = fname;
-    };
-    
+    };    
      this.setLastName = function(lname){
       nameArr[1] = lname;
-    };
-    
+    };   
     this.setFullName = function(fullName){
       nameArr[0] = fullName.split(' ')[0];
-       nameArr[1] = fullName.split(' ')[1];
-      
+       nameArr[1] = fullName.split(' ')[1];      
     };
-    
-    
-    // return firstAndLast;
 };
 
 var bob = new Person('Bob Ross');
